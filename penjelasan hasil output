@@ -1,0 +1,11 @@
+1. Pembuatan Objek & Pengguna Static Variable
+   - Terlihat saldo awal Budi adalah rp 50000.0 dan Siti rp 20000.0
+   - Output Total rekening terdaftar saat ini: 2 membuktikan bahwa Static Variable (total rekening) bekerja dengan benar untuk menghitung berapa banyak objek/rekening yang telah dibuat secara global.
+
+2. Percobaan Transfer Berhasil (Method Bisnis)
+   - Ketika Budi mentransfer rp 150000.0 ke Siti, method transfer() berhasil mengeksekusi transaksi
+   - Saldo Budi berkurang menjadi rp 350000.0 (500.00 - 150.000) dan saldo Siti bertambah menjadi rp 350000.0 (200.000 + 150.000)
+
+3. Validasi Enkapsulasi & Error Handling (Transfer Melebihi Saldo)
+   - Saat dicoba melakukan transfer melebihi sisa saldo Budi (saldo sisa rp 350000.0), program berhasil mencegat transaksi tersebut dan menampilkan pesan error [ERROR] Transfer Gagal! Saldo Budi tidak mencukupi. (Saldo saat ini: rp 350000.0)
+   - Pada bagian Saldo Akhir, saldo Budi dan Siti tetap tidak berubah (rp 350000.0), membuktikan bahwa validasi enkapsulasi berjalan dengan baik dan mencegah saldo menjadi minus
